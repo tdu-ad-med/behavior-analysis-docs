@@ -18,11 +18,24 @@
 			color: #1E1E1E;
 		}
 	</style>
+	<script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+	<script type="text/javascript">
+		let r = 0, speed = 0.2;
+		function setup() { createCanvas(100, 100, WEBGL).parent("canvas"); }
+		function draw() {
+			clear(); noFill(); stroke(30, 30, 30); strokeWeight(0.7);
+			r += speed + 0.01;
+			speed /= 1.04;
+			rotateX(r * 1.2); rotateY(r * 1.9); rotateZ(r * 0.1);
+			box(30);
+		}
+	</script>
 </head>
 <body>
-	<div>
+	<main>
 		<h1>はこえきHP</h1>
 		<p>準備中です</p>
-	</div>
+		<div id="canvas"></div>
+	</main>
 </body>
 </html>
