@@ -1,140 +1,81 @@
-<html>
-
+<!doctype html>
+<html class="no-js" lang="ja">
 <head>
-<meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<meta name=Generator content="Microsoft Word 15 (filtered)">
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-	{font-family:游明朝;
-	panose-1:2 2 4 0 0 0 0 0 0 0;}
-@font-face
-	{font-family:"¥@游明朝";}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{margin:0mm;
-	margin-bottom:.0001pt;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	font-size:10.5pt;
-	font-family:"游明朝",serif;}
-p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
-	{margin-top:0mm;
-	margin-right:0mm;
-	margin-bottom:0mm;
-	margin-left:42.0pt;
-	margin-bottom:.0001pt;
-	text-align:justify;
-	text-justify:inter-ideograph;
-	font-size:10.5pt;
-	font-family:"游明朝",serif;}
-.MsoChpDefault
-	{font-family:"游明朝",serif;}
- /* Page Definitions */
- @page WordSection1
-	{size:595.3pt 841.9pt;
-	margin:99.25pt 30.0mm 30.0mm 30.0mm;
-	layout-grid:18.0pt;}
-div.WordSection1
-	{page:WordSection1;}
- /* List Definitions */
- ol
-	{margin-bottom:0mm;}
-ul
-	{margin-bottom:0mm;}
--->
-</style>
+	<meta charset="utf-8">
+	<title>歩行者人数計測システム評価および歩行者行動分析に関する研究</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<meta property="og:title" content="歩行者人数計測システム評価および歩行者行動分析に関する研究">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://tdu-ad-med.github.io/hakoeki-iot/">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+	<style type="text/css">
+		body {
+			background: #FFFFFF;
+			font-family: sans-serif;
+			color: #1E1E1E;
+		}
+		h1 { font-size: min(8vw, 36px); margin-top: 0px; margin-bottom: 4px; }
+		h2 { font-size: min(6vw, 28px); margin-top: 0px; margin-bottom: 4px; }
+		h3 { font-size: min(5vw, 18px); margin-top: 0px; margin-bottom: 4px; }
+		p  { font-size: min(5vw, 18px); margin-top: 0px; margin-bottom: 12px; }
+		.main {
+			display: block;
+			width: 100%;
+			max-width: 800px;
+			margin: auto;
+			padding-top: min(8vw, 36px);
+			padding-left: 26px;
+			padding-right: 26px;
+			box-sizing: border-box;
+		}
+		.border {
+			width: 100%;
+			height: 0px;
+			margin-top: 54px;
+			margin-bottom: 24px;
+			border-top: 2px solid #1E1E1E;
+		}
+	</style>
 </head>
+<body>
+	<div class="main">
+		<h1>歩行者人数計測システム評価および歩行者行動分析に関する研究</h1>
+		<br>
 
-<body lang=JA style='text-justify-trim:punctuation'>
+		<h2>1. プロジェクトの目的</h2>
+		<p>本研究は、映像から歩行者の身体の関節情報をえて、歩行者数のカウントや歩行軌跡データを自動的に取得するシステムの評価および歩行者行動の分析を目的としています。</p>
+		<p>システムを開発し、分析することによって、人の動向を予測し、空地の有効利用や観光資源の発掘により、まちの活性化に資することを目的とします。</p>
+		<br>
 
-<div class=WordSection1 style='layout-grid:18.0pt'>
+		<h2>2. 研究概要</h2>
+		<p>(1) ビル2階の事務所（下記参照）にカメラを設置し、当該カメラの設置場所付近を通過する人を撮影します。</p>
+		<p>(2) (1)にかかる撮影データをOpenPoseというライブラリーを用いて人の関節位置データを抽出します。</p>
+		<p>(3) (2)にかかる関節位置データをコンピュータで機械的に解析することにより、歩行者数データや歩行軌跡データが取得しますが、特定の個人を識別しない範囲で推定・分析します。</p>
+		<p>(4)  (3)で得られたデータは、撮影データと目視等で対照することにより、当該情報の精度を検証します。</p>
+		<p>(5)  関節位置データ、歩行者数データ、歩行軌跡データを分析し、本研究に役立てます。</p>
+		<br>
 
-<p class=MsoNormal><span style='font-size:12.0pt'>研究プロジェクト：歩行者人数計測システム評価および歩行者行動分析に関する研究</span></p>
+		<h2>3. 撮影の実施方法</h2>
+		<h3>撮影実施期間</h3>
+		<p>2020年7月27日～9月9日（予定）</p>
+		<h3>カメラの台数</h3>
+		<p>2台</p>
+		<h3>設置場所</h3>
+		<p>函館市末広町22-17 2階　有限会社　Faith Up事務所</p>
 
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt'>&nbsp;</span></p>
+		<div class="border"></div>
 
-<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
-lang=EN-US style='font-size:12.0pt'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:12.0pt'>プロジェクトの目的</span></p>
+		<p>なお、研究プロジェクトの一環として撮影データを収集しています。撮影データ等は当研究室のみで利用し、外部への提供はございません。</p>
+		<br>
 
-<p class=MsoNormal style='text-indent:12.0pt'><span style='font-size:12.0pt'>本研究は、映像から歩行者の身体の関節情報をえて、歩行者数のカウントや歩行軌跡データを自動的に取得するシステムの評価および歩行者行動の分析を目的としています。システムを開発し、分析することによって、人の動向を予測し、空地の有効利用や観光資源の発掘により、まちの活性化に資することを目的とします。</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt'>&nbsp;</span></p>
-
-<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
-lang=EN-US style='font-size:12.0pt'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:12.0pt'>研究概要</span></p>
-
-<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
-lang=EN-US style='font-size:12.0pt'>(1)<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><span style='font-size:12.0pt'>ビル<span lang=EN-US>2</span>階の事務所（下記参照）にカメラを設置し、当該カメラの設置場所付近を通過する人を撮影します。</span></p>
-
-<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
-lang=EN-US style='font-size:12.0pt'>(2)<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><span lang=EN-US style='font-size:12.0pt'>(1)</span><span
-style='font-size:12.0pt'>にかかる撮影データを<span lang=EN-US>OpenPose</span>というライブラリーを用いて人の関節位置データを抽出します。</span></p>
-
-<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
-lang=EN-US style='font-size:12.0pt'>(3)<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><span lang=EN-US style='font-size:12.0pt'>(2)</span><span
-style='font-size:12.0pt'>にかかる関節位置データをコンピュータで機械的に解析することにより、歩行者数データや歩行軌跡データが取得しますが、特定の個人を識別しない範囲で推定・分析します。</span></p>
-
-<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
-lang=EN-US style='font-size:12.0pt'>(4)<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><span lang=EN-US style='font-size:12.0pt'>(3)</span><span
-style='font-size:12.0pt'>で得られたデータは、撮影データと目視等で対照することにより、当該情報の精度を検証します。</span></p>
-
-<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
-lang=EN-US style='font-size:12.0pt'>(5)<span style='font:7.0pt "Times New Roman"'>&nbsp;
-</span></span><span style='font-size:12.0pt'>関節位置データ、歩行者数データ、歩行軌跡データを分析し、本研究に役立てます。</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt'>&nbsp;</span></p>
-
-<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
-lang=EN-US style='font-size:12.0pt'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-size:12.0pt'>撮影の実施方法</span></p>
-
-<p class=MsoListParagraph style='margin-left:21.0pt'><span style='font-size:
-12.0pt'>撮影実施期間：<span lang=EN-US>2020</span>年<span lang=EN-US>7</span>月<span
-lang=EN-US>27</span>日〜<span lang=EN-US>9</span>月<span lang=EN-US>9</span>日（予定）</span></p>
-
-<p class=MsoListParagraph style='margin-left:21.0pt'><span style='font-size:
-12.0pt'>カメラの台数：<span lang=EN-US>2</span>台</span></p>
-
-<p class=MsoListParagraph style='margin-left:21.0pt'><span style='font-size:
-12.0pt'>設置場所：函館市末広町<span lang=EN-US>22-17 2</span>階　有限会社　<span lang=EN-US>Faith
-Up</span>事務所</span></p>
-
-<p class=MsoListParagraph style='margin-left:21.0pt'><span lang=EN-US
-style='font-size:12.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal style='text-indent:12.0pt'><span style='font-size:12.0pt'>なお、研究プロジェクトの一環として撮影データを収集しています。撮影データ等は当研究室のみで利用し、外部への提供はございません。</span></p>
-
-<p class=MsoListParagraph style='margin-left:21.0pt'><span lang=EN-US
-style='font-size:12.0pt'>&nbsp;</span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt'>ご不明な点、お問い合わせがあれば、下記問い合わせ先までご連絡ください。</span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt'>実施主体：東京電機大学</span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt'>データ収集管理責任者：東京電機大学システムデザイン工学部　教授　柴田　滝也</span></p>
-
-<p class=MsoNormal><span style='font-size:12.0pt'>問い合わせ先：東京電機大学　メディア環境デザイン研究室　問い合わせ窓口</span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt'>Tel. 0138-83-5045(Faith
-Up</span><span style='font-size:12.0pt'>内<span lang=EN-US>)</span></span></p>
-
-<p class=MsoNormal><span lang=EN-US style='font-size:12.0pt'>e-mail:
-med.tdu@gmail.com</span></p>
-
-</div>
-
+		<p>ご不明な点、お問い合わせがあれば、下記問い合わせ先までご連絡ください。</p>
+		<p>実施主体：東京電機大学</p>
+		<p>データ収集管理責任者：東京電機大学システムデザイン工学部　教授　柴田　滝也</p>
+		<p>問い合わせ先：東京電機大学　メディア環境デザイン研究室　問い合わせ窓口</p>
+		<p>Tel. 0138-83-5045(Faith Up内)</p>
+		<p>e-mail: med.tdu@gmail.com</p>
+	</div>
 </body>
-
 </html>
